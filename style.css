@@ -29,7 +29,7 @@ p{
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+    margin-bottom: 80px;
   }
 
   .mouse {
@@ -66,4 +66,23 @@ p{
 		opacity: 0;
 		top: 30px;
 	}
+}
+
+
+
+.about-me{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white; 
+}
+
+.about-me .container{
+    height: auto;
+    padding: 50px 20px 50px 20px;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
 }
