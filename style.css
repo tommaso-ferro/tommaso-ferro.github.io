@@ -3,7 +3,67 @@ p{
 }
 
 .container{
-    margin: 0 auto;
-    text-align: center;
-    font-size: 40px;
+    display: flex;
+    font-size: 30px;
+    justify-content: center; 
+    align-items: center;     
+    height: 75vh;
+}
+
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  .fadeInUp-animation {
+    animation: 1.5s fadeInUp;
+  }
+
+  .field{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  .mouse {
+	width: 25px;
+	height: 45px;
+	border: 3px solid #333;
+	border-radius: 30px;
+	position: relative;
+	&::before {
+		content: '';
+		width: 6px;
+		height: 6px;
+		position: absolute;
+		top: 5px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #333;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 30px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 30px;
+	}
 }
