@@ -1,0 +1,85 @@
+html{
+    height: 100vh;
+    background: #000000;
+    background: linear-gradient(145deg,rgba(0, 0, 0, 1) 0%, rgba(59, 59, 59, 1) 100%);
+}
+
+body{
+    color: white;
+}
+
+.navbar a{
+    color: white;
+}
+
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 100px 20px 100px;
+}
+
+.project-container h1{
+    font-family: "Meie Script", cursive;
+    font-size: 80px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+.content p{
+    padding-left: 80px;
+    overflow-wrap: break-word;
+}
+
+.image{
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.button{
+    margin-top: 50px;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: fit-content;
+    text-decoration: none;
+    
+}
+
+.button:hover{
+    cursor: pointer;
+    animation: fade 0.5s forwards;
+}
+
+@keyframes fade {
+    from {background-color: white;}
+    to {
+        background-color: rgb(153, 153, 153);
+        color: white;
+    }
+}
+
+.title{
+    font-size: 50px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Meie Script", cursive;
+}
+
+.meie-script-regular {
+    font-family: "Meie Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }

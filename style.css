@@ -25,6 +25,10 @@ p{
     animation: 1.5s fadeInUp;
   }
 
+  .navbar a{
+    color: black;
+  }
+
   .field{
     display: flex;
     align-items: center;
