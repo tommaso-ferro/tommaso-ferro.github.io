@@ -5,9 +5,11 @@ p{
 .container{
     display: flex;
     font-size: 30px;
+    text-align: center;
     justify-content: center; 
     align-items: center;     
     height: 75vh;
+    margin: 0px 20px 0px 20px;
 }
 
 @keyframes fadeInUp {
@@ -72,8 +74,6 @@ p{
 	}
 }
 
-
-
 .about-me{
     display: flex;
     height: 100%;
@@ -89,4 +89,8 @@ p{
     text-align: center;
     flex-direction: column;
     gap: 20px;
+}
+
+footer{
+  color: black;
 }

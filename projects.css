@@ -17,11 +17,40 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 100px 20px 100px;
+    
 }
 
 .project-container h1{
     font-family: "Meie Script", cursive;
     font-size: 80px;
+}
+
+@media (max-width: 1024px) {
+    .project-container{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    .project-container h1{
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .content{
+        width: 25%;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .cont-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+    }
+    
 }
 
 .content{
@@ -30,17 +59,16 @@ body{
     align-items: center;
     flex-direction: column;
     width: 50%;
-    
 }
 
 .content p{
-    padding-left: 80px;
+    padding-left: 10%;
     overflow-wrap: break-word;
 }
 
 .image{
-    width: 600px;
-    height: 600px;
+    max-width: 100%;
+    
     border-radius: 20px;
 }
 
@@ -55,7 +83,7 @@ body{
     font-weight: bold;
     width: fit-content;
     text-decoration: none;
-    
+    margin-bottom: 20px;
 }
 
 .button:hover{
@@ -66,7 +94,7 @@ body{
 @keyframes fade {
     from {background-color: white;}
     to {
-        background-color: rgb(153, 153, 153);
+        background-color: rgb(75, 75, 75);
         color: white;
     }
 }
@@ -82,4 +110,8 @@ body{
     font-family: "Meie Script", cursive;
     font-weight: 400;
     font-style: normal;
+  }
+
+  footer{
+    color: white;
   }
