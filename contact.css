@@ -1,0 +1,84 @@
+html{
+    background-image: url('images/58a508023db93aeb299f88b8474d867a.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+body{
+    
+    color: white;    
+}
+
+.navbar a{
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+.container h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    padding-top: 20%;
+}
+
+.border{
+    border: 2px solid white;
+    padding: 50px 100px 100px 100px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.input-form{
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.confirm{
+    background-color: white;
+    color: rgb(0, 113, 206);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.confirm:hover{
+    animation: fadeIn 0.5s forwards;
+}
+
+.form label{
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from{
+        background-color: white;
+        color: rgb(0, 113, 206);
+    }
+    to{
+        background-color: rgb(0, 113, 206);
+        color: white;
+    }
+}
