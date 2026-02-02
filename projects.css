@@ -1,7 +1,9 @@
 html{
+    background-image: url('images/44528deb75cea4c823a955c4029ef3b7.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
-    background: #000000;
-    background: linear-gradient(145deg,rgba(0, 0, 0, 1) 0%, rgba(59, 59, 59, 1) 100%);
+    background-repeat: no-repeat;
 }
 
 body{
@@ -114,4 +116,58 @@ body{
 
   footer{
     color: white;
+  }
+
+.arrows{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px 50px 100px;
+
+}
+
+.arrows button{
+    color: white;
+    background-color: rgba(163, 163, 163, 0.342);
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 40%;
+    padding: 10px 17px 10px 17px;
+}
+
+.arrows button:hover{
+    animation: fadeIn 0.5s forwards;    
+}
+
+@keyframes fadeIn {
+    to{
+        background-color: rgba(163, 163, 163, 0.7);
+    }
+}
+
+@media (max-width: 1024px) {
+    .arrows{
+        margin: 0 20px 50px 20px;
+    }
+
+    .arrows button{
+        font-size: 20px;
+        padding: 5px 10px 5px 10px;
+    }
+}
+
+@keyframes fadeInStart {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+      filter: blur(10px);
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  .fadeInStart-animation {
+    animation: 1.5s fadeInStart;
   }
