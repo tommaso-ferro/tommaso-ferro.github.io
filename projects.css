@@ -70,36 +70,29 @@ body{
 
 .image{
     max-width: 100%;
-    
     border-radius: 20px;
+    margin: 0px 30px;
 }
 
 .button{
-    margin-top: 50px;
+    display: block;
+    margin: 20px auto 0 auto;
     padding: 10px 20px 10px 20px;
-    background-color: white;
-    color: black;
+    background-color: rgba(163, 163, 163, 0.342);
+    color: white;
     border: none;
     border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
-    width: fit-content;
     text-decoration: none;
-    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover{
-    cursor: pointer;
-    animation: fade 0.5s forwards;
+    background-color: rgba(163, 163, 163, 0.438);
 }
 
-@keyframes fade {
-    from {background-color: white;}
-    to {
-        background-color: rgb(75, 75, 75);
-        color: white;
-    }
-}
+
 
 .title{
     font-size: 50px;
@@ -171,3 +164,25 @@ body{
   .fadeInStart-animation {
     animation: 1.5s fadeInStart;
   }
+
+.card{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0% 10% 0% 10%;
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.card h2{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}

@@ -1,0 +1,54 @@
+html body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background: #23631f;
+    background: radial-gradient(circle, rgb(40, 153, 32) 0%, rgb(9, 90, 1) 100%);
+}
+
+#cardImage1, #cardImage2{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.bot-container{
+    display: flex;
+}
+
+.player-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bot-container label{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin: auto;
+}
+
+.player-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-container button{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: auto;
+}
+
+.player-container button:hover{
+    background-color: #ddd;
+}

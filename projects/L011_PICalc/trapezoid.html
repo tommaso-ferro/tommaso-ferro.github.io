@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Calculator</title>
+    <link rel="stylesheet" href="trapezoid.css">
+</head>
+<body>
+    <div class="all">
+        <div class="header">
+            <h1 id="title">PI Calculator - Trapezoid Method</h1>
+            <h2>by Tommaso Ferro</h2>
+        </div>
+
+        <div class="selector">
+            <button id="montecarloMethod">Monte Carlo Method</button>
+            <button id="trapezoidMethod">Trapezoid Method</button>
+        </div>
+
+        <div class="wrapper">
+            <canvas id="canvas" height="600" width="600"></canvas>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label for="numTrapezoids">Number of Trapezoids:</label>
+                    <input type="number" id="numTrapezoids" value="10" min="1" max="1000">
+                    <button id="startbutton">START SIMULATION</button>
+                    <button id="resetbutton">RESET BUTTON</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="trapezoid.js"></script>
+    
+</body>
+</html>

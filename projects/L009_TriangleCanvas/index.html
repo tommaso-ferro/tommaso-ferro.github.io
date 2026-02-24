@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Koch Snowflake</h1>
+        <h2>by Tommaso Ferro</h2>
+    </div>
+    
+
+    <div class="wrapper">
+        <canvas id="canvas" height="600" width="600"></canvas>
+
+        <div class="controls">
+            <div class="control-group"></div>
+
+            <button id="resetZoom">Reset</button>
+
+                <div class="slidecontainer">
+                    <p>Adjust Size: <span id="sizeValue">0</span></p>
+                    <input type="range" min="0" max="5" value="0" class="slider" id="myRange">
+                  </div>
+
+                  <div class="zoom">
+                    <button id="zoomIn">Zoom In +</button>
+                    <button id="zoomOut">Zoom Out -</button>
+                  </div>
+
+                  <div class="control-group">
+                    <label for="colorPicker">Stroke Color:</label>
+                    <input type="color" id="colorPicker" value="#000000" class="inputColorP">
+                  </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
