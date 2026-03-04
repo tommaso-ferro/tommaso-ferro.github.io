@@ -1,4 +1,6 @@
 const drawButton = document.querySelector("#drawButton");
+const image1 = document.querySelector("#cardImage1");
+const image2 = document.querySelector("#cardImage2");
 
 async function init(){
 
@@ -20,6 +22,7 @@ const deckID = deckData.deck_id;
     document.querySelector("#cardImage2").src = cardLink2;
     console.log(data);
 }
+
 
 
 
