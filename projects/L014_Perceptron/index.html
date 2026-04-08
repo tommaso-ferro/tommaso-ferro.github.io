@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perceptron | Color Guessr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Color Guessr</h2>
+        <p>Guess the color!</p>
+
+        <div id="color-box"></div>
+        <p id="rgb-text">R: 0, G: 0, B: 0</p>
+
+        <div class="controls">
+            <button class="btn btn-caldo" onclick="registra('Warm')">Warm</button>
+            <button class="btn btn-freddo" onclick="registra('Cool')">Cool</button>
+            <button class="btn btn-nonso" onclick="registra('Don\'t Know')">Don't Know</button>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 2rem 0;">
+
+        <h3>Samples Collected: <span id="count">0</span></h3>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>R</th>
+                        <th>G</th>
+                        <th>B</th>
+                        <th>Classification</th>
+                    </tr>
+                </thead>
+                <tbody id="data-table">
+                    </tbody>
+            </table>
+        </div>
+
+        <button class="btn btn-clear" onclick="pulisci()">Clear Table</button>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
