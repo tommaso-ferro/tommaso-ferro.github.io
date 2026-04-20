@@ -1,107 +1,96 @@
-html body{
+html, body {
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     color: white;
-    background: #23631f;
     background: radial-gradient(circle, rgb(40, 153, 32) 0%, rgb(19, 95, 12) 100%);
+    min-height: 100vh;
+    overflow: hidden;
 }
 
-h1{
+h1 {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
     font-family: 'Casino', sans-serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     letter-spacing: 6px;
-    text-shadow: black 1px 1px 0px, black 2px 2px 0px, black 3px 3px 0px, black 4px 4px 0px, black 5px 5px 0px;
+    text-shadow: black 2px 2px 0px, black 4px 4px 0px;
+    margin: 15px 0;
 }
 
-.image{
-    width: 300px;  /* Dimensione decisa dal contenitore */
-    height: 400px;
-    overflow: hidden; /* Fondamentale per tagliare i margini */
-    position: relative;
+#gameMessage {
+    text-align: center;
+    color: #ffeb3b;
+    font-size: 1.8rem;
+    margin: 20px 0;
+    height: 40px;
 }
 
-.image img {
-    width: 200%;
-    height: 200%;
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.bot-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1%;
-}
-
-.player-container{
-    display: flex;
-    justify-content: space-between;
-}
-
-.bot-container label{
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: auto;
-}
-
-.player-container{
+.hand {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: -40px; 
+    min-height: 250px; 
+    min-width: 400px;
 }
 
-.player-container button{
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: #fff;
-    border: none;
-    border-radius: 5px;
+.hand img {
+    width: 180px; 
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.6);
+    margin: 0 5px;
+}
+
+.bot-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 0 40px;
+    margin-top: 100px;
+}
+
+.player-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: auto;
-}
-
-.player-container button:hover{
-    background-color: #ddd;
-}
-
-::-webkit-scrollbar {
-     display: none;
-}
-
-.info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    margin: auto;
-}
-
-.info select{
-    padding: 5px;
-    font-size: 1.2rem;
-    background-color: #fff;
     border: none;
-    border-radius: 5px;
-    margin-left: 15px;
+    background: white;
 }
 
-.info2{
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.info, .info2 {
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid gold;
+}
+
+.action-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    margin: auto;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+#betSelect {
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
 }
